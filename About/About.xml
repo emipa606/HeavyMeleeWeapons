@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Heavy Melee Weapons (Continued)</name>
+  <packageId>Mlie.HeavyMeleeWeapons</packageId>
+  <author>Blazen_Rock, xrushha, legodude17, amnabi, Kitsune</author>
+  <url>https://github.com/emipa606/HeavyMeleeWeapons</url>
+  <supportedVersions>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+      <downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+    </li>
+    <li>
+      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
+      <displayName>Enable Oversized Weapons</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2543371889</steamWorkshopUrl>
+      <downloadUrl>https://github.com/splincore/Enable-Oversized-Weapons</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>CarnySenpai.EnableOversizedWeapons</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Blazen_Rock, xrushha, legodude17, amnabi, Kitsunes mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=2418407014
+with permission
+
+- Added EnableOversizedWeapons as a requirement instead of including it in the mod
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/HeavyMeleeWeapons][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+This mod is officially dead. I'm forever grateful to all the people who supported this project. If you'd like to adopt this mod, hit me up on the Rimworld Discord: Blazen_Rock
+[hr][/hr]
+[h1]Big Swords and Exoframes Help Brawlers Keep Mechanoids at Bay.[/h1]
+Have you ever wanted to chop mechanoids to pieces with an oversized sword? Lay waste to your enemies with a red-hot incendiary cannon? Crush the under the immense presence of a psychic warhammer? Now you can do that and more with this mod.
+
+[h1]Tools of the Trade[/h1]
+Heavy Melee Weapons provides users to make melee combat a bit more engaging via the introduction of powerful weapons and equipment.
+[img]https://imgur.com/RTpSa8u.png[/img]
+
+[img]https://imgur.com/7tDeUyH.png[/img]
+
+[img]https://imgur.com/tZheqgC.png[/img]
+
+[img]https://imgur.com/AxgMAFk.png[/img]
+
+Added with the 1.1 update.
+[img]https://imgur.com/DvEZOUW.png[/img]
+
+[img]https://imgur.com/eh5mtdT.png[/img]
+
+[img]https://imgur.com/g9ujuvU.png[/img]
+
+
+[h1] Compatibility[/h1] 
+Heavy Melee Weapons has compatibility patches for these mods:
+[b][url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&amp;amp;id=2520200610]Combat Extended[/url][/b]- Caulaflourer
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2329126791&amp;amp;searchtext=Vanilla+Weapons+Expanded]Vanilla Weapons Expanded - Heavy Weapons[/url]- Allows Pawns with Exoframes to equip heavy melee weapons
+Misha's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2019999267&amp;amp;searchtext=Craftable+Royalty+Weapons]Craftable Royalty Weapons[/url] - Research required to craft HMWs is merged into Ultratech Weapons.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2178003816&amp;amp;searchtext=Persona+bonding+Forgw]Persona Bond Forge[/url]- Adds craftable persona variants of Heavy Melee Weapons
+
+Heavy Melee Weapons must be loaded after:
+Harmony
+Royalty
+Vanilla Expanded Framework
+
+Heavy Melee Weapons should be loaded before:
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2364527746]Vanilla Weapons Expanded - Heavy - Reloading Patch[/url]
+
+[h1]Language Patches[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2508921477&amp;amp;tscn=1623300371]Chinese[/url] - Made by MZM_GOW
+
+[h1]Credits[/h1]
+Art by [url=https://steamcommunity.com/id/aquelekitsune/myworkshopfiles/?appid=294100]Kitsune[/url]
+Workshop Graphics by [url=https://steamcommunity.com/id/unnamedender/myworkshopfiles/]Halno[/url]
+XML by [url=https://steamcommunity.com/id/xrushha/myworkshopfiles/?appid=294100]xrushha[/url]
+C# by [url=https://steamcommunity.com/id/legodude17/myworkshopfiles/?appid=294100]legodude17[/url] &amp;amp; [url=https://steamcommunity.com/profiles/76561199123504894/myworkshopfiles/]Amnabi[/url]
+[url=https://steamcommunity.com/id/Oskarpotocki/myworkshopfiles/]Oskar Potocki[/url] for allowing the use of his code in the mod and the textures visible in thumbnail([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2016436324]Vanilla Textures Expanded[/url]).
+CE Patch by [url=https://steamcommunity.com/profiles/76561198392166105/myworkshopfiles/]Caulaflourer[/url]
+
+
+[url=https://discord.gg/7befJWr9xS][img]https://i.imgur.com/cfoFEMA.png[/img][/url]
+PackageId:Pitchstone.Heavy Melee Weapons
+	
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]</description>
+</ModMetaData>
