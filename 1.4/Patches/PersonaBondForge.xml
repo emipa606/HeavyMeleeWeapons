@@ -31,7 +31,8 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>BondingCore</li>
+                      <li MayRequire="xedos.personabond">BondingCore</li>
+                      <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -40,7 +41,8 @@
               <fixedIngredientFilter>
                 <thingDefs>
                   <li>HMW_MeleeWeapon_HeavyMonoSword</li>
-                  <li>BondingCore</li>
+                  <li MayRequire="xedos.personabond">BondingCore</li>
+                  <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <products>
@@ -51,61 +53,12 @@
               </skillRequirements>
               <workSkill>Intellectual</workSkill>
               <recipeUsers>
-                <li>BondingBench</li>
+                <li MayRequire="xedos.personabond">BondingBench</li>
+                <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingBench</li>
               </recipeUsers>
             </RecipeDef>
           </value>
         </li>
-        <!-- <li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-					<value>
-  <RecipeDef>
-    <defName>HMW_Make_PersonaHeavyZeushammer</defName>
-    <label>Bond heavy zeushammer</label>
-    <description>Bond a heavy zeushammer.</description>
-    <jobString>Bonding a heavy zeushammer.</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>200000</workAmount>
-    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>HMW_MeleeWeapon_HeavyZeushammer</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BondingCore</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>HMW_MeleeWeapon_HeavyZeushammer</li>
-        <li>BondingCore</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <HMW_MeleeWeapon_PersonaHeavyZeushammer>1</HMW_MeleeWeapon_PersonaHeavyZeushammer>
-    </products>
-    <skillRequirements>
-      <Intellectual>15</Intellectual>
-    </skillRequirements>
-    <workSkill>Intellectual</workSkill>
-	<recipeUsers>
-		<li>BondingBench</li>
-	</recipeUsers>
-  </RecipeDef>
-					</value>
-			</li> -->
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
@@ -131,7 +84,8 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>BondingCore</li>
+                      <li MayRequire="xedos.personabond">BondingCore</li>
+                      <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -140,7 +94,8 @@
               <fixedIngredientFilter>
                 <thingDefs>
                   <li>HMW_MeleeWeapon_FlameLance</li>
-                  <li>BondingCore</li>
+                  <li MayRequire="xedos.personabond">BondingCore</li>
+                  <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <products>
@@ -151,7 +106,8 @@
               </skillRequirements>
               <workSkill>Intellectual</workSkill>
               <recipeUsers>
-                <li>BondingBench</li>
+                <li MayRequire="xedos.personabond">BondingBench</li>
+                <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingBench</li>
               </recipeUsers>
             </RecipeDef>
           </value>
@@ -181,7 +137,8 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>BondingCore</li>
+                      <li MayRequire="xedos.personabond">BondingCore</li>
+                      <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -190,7 +147,8 @@
               <fixedIngredientFilter>
                 <thingDefs>
                   <li>HMW_MeleeWeapon_PsychicWarhammer</li>
-                  <li>BondingCore</li>
+                  <li MayRequire="xedos.personabond">BondingCore</li>
+                  <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <products>
@@ -201,7 +159,8 @@
               </skillRequirements>
               <workSkill>Intellectual</workSkill>
               <recipeUsers>
-                <li>BondingBench</li>
+                <li MayRequire="xedos.personabond">BondingBench</li>
+                <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingBench</li>
               </recipeUsers>
             </RecipeDef>
           </value>
@@ -231,7 +190,8 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>BondingCore</li>
+                      <li MayRequire="xedos.personabond">BondingCore</li>
+                      <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -240,7 +200,8 @@
               <fixedIngredientFilter>
                 <thingDefs>
                   <li>HMW_MeleeWeapon_ZeusSword</li>
-                  <li>BondingCore</li>
+                  <li MayRequire="xedos.personabond">BondingCore</li>
+                  <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingCore</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <products>
@@ -251,7 +212,8 @@
               </skillRequirements>
               <workSkill>Intellectual</workSkill>
               <recipeUsers>
-                <li>BondingBench</li>
+                <li MayRequire="xedos.personabond">BondingBench</li>
+                <li MayRequire="StatistNo1.personabond">PersonaBondForge_ThingDef_BondingBench</li>
               </recipeUsers>
             </RecipeDef>
           </value>

@@ -1,5 +1,8 @@
 # Changelog for HeavyMeleeWeapons
 
+1.4.1 - Updated patch to support the 1.4 version of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2881724503]Persona Bond[/url]
+
+
 1.4.0 - First publish.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
