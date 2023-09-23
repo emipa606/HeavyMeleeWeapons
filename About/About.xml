@@ -11,6 +11,11 @@
   </supportedVersions>
   <modDependencies>
     <li>
+      <packageId>Ludeon.Rimworld.Royalty</packageId>
+      <displayName>Rimworld Royalty</displayName>
+      <downloadUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/</downloadUrl>
+    </li>
+    <li>
       <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
       <displayName>Vanilla Expanded Framework</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
@@ -24,6 +29,7 @@
     </li>
   </modDependencies>
   <loadAfter>
+    <li>Ludeon.Rimworld.Royalty</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
   </loadAfter>
