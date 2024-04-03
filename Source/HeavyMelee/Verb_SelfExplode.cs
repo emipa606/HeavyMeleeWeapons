@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 
 namespace HeavyMelee;
 
@@ -26,7 +25,7 @@ public class Verb_SelfExplode : Verb
     {
         DamageWorker_Flame_30Degrees.ExplosionOriginator = CasterPawn;
         GenExplosion.DoExplosion(caster.Position, caster.Map, verbProps.range, verbProps.meleeDamageDef, caster,
-            verbProps.meleeDamageBaseAmount, ignoredThings: new List<Thing> { caster });
+            verbProps.meleeDamageBaseAmount, ignoredThings: [caster]);
     }
 
     public override bool Available()

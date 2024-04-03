@@ -4,5 +4,5 @@ namespace HeavyMelee;
 
 public class SelfDamageModExtension : DefModExtension
 {
-    public int selfDamageAmountPerAttack = 0;
+    public readonly int selfDamageAmountPerAttack = 0;
 }

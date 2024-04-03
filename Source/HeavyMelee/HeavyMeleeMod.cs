@@ -30,7 +30,7 @@ public class HeavyMeleeMod : Mod
         Verb verb,
         ref Command_VerbTarget __result)
     {
-        if (!(verb is IVerbCustomCommand custom))
+        if (verb is not IVerbCustomCommand custom)
         {
             return true;
         }
@@ -70,7 +70,7 @@ public class HeavyMeleeMod : Mod
                 iconAngle = __instance.parent.def.uiIconAngle,
                 iconDrawScale = __instance.parent.def.uiIconScale,
                 iconOffset = __instance.parent.def.uiIconOffset,
-                disabled = Disabled(comp, out var disabledReason),
+                Disabled = Disabled(comp, out var disabledReason),
                 disabledReason = disabledReason,
                 action = () =>
                 {

@@ -16,7 +16,7 @@ public class DamageWorker_Flame_30Degrees : DamageWorker_Flame
         if (ExplosionOriginator == null)
         {
             Log.Error("[HeavyMelee] Did 30 Degree explosion without pawn!");
-            return base.ExplosionCellsToHit(center, map, radius, needLOSToCell1, needLOSToCell2);
+            return base.ExplosionCellsToHit(center, map, radius, needLOSToCell1, needLOSToCell2, affectedAngle);
         }
 
         Log.Message("ExplosionCellsToHit!");

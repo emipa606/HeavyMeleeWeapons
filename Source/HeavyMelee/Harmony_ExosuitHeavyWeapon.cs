@@ -9,38 +9,21 @@ using Patch_FloatMenuMakerMap = HeavyWeapons.Patch_FloatMenuMakerMap;
 
 namespace HeavyMelee;
 
-/**
- * [DefOf]
- * public static class ExosuitPatchLoaderDefOf{
- * public static ExosuitPatchLoader exosuitPatchLoader;
- * }
- * public class ExosuitPatchLoader : Def{
- * public List
- * <string>
- *     CountAsExosuitHediff = new List
- *     <string>
- *         ();
- *         public List
- *         <string>
- *             CountAsHeavyWeapon = new List
- *             <string>
- *                 ();
- *                 }*
- */
 [StaticConstructorOnStartup]
 public static class Harmony_ExosuitHeavyWeapon
 {
-    public static HashSet<string> SA_HeavyWeaponHediffString = new HashSet<string>();
-    public static HashSet<HediffDef> SA_HeavyWeaponableHediffDefs = new HashSet<HediffDef>();
-    public static HashSet<string> SA_HeavyWeaponThingString = new HashSet<string>();
-    public static HashSet<ThingDef> SA_HeavyWeaponThingDefs = new HashSet<ThingDef>();
+    public static readonly HashSet<string> SA_HeavyWeaponHediffString = [];
+    public static readonly HashSet<HediffDef> SA_HeavyWeaponableHediffDefs = [];
+    public static readonly HashSet<string> SA_HeavyWeaponThingString = [];
+    public static readonly HashSet<ThingDef> SA_HeavyWeaponThingDefs = [];
 
-    public static HashSet<HeavyWeapon>
+    public static readonly HashSet<HeavyWeapon>
         SA_HeavyWeaponExtentionInstances =
-            new HashSet<HeavyWeapon>(); //each of the heavy weapon has a unique instance of this class, so this can be used to keep track of which weapon
+        [
+        ]; //each of the heavy weapon has a unique instance of this class, so this can be used to keep track of which weapon
 
-    public static List<Thing> SA_PawnsCheck = new List<Thing>();
-    public static List<Apparel> SA_ConcurrencyErrorSafetyNet = new List<Apparel>();
+    public static readonly List<Thing> SA_PawnsCheck = [];
+    public static readonly List<Apparel> SA_ConcurrencyErrorSafetyNet = [];
 
     static Harmony_ExosuitHeavyWeapon()
     {
@@ -134,47 +117,57 @@ public static class Harmony_ExosuitHeavyWeapon
             yield return giz;
         }
 
-        if (PawnAttackGizmoUtility.CanShowEquipmentGizmos() && __instance.pawn.IsColonistPlayerControlled)
+        if (!PawnAttackGizmoUtility.CanShowEquipmentGizmos() || !__instance.pawn.IsColonistPlayerControlled)
         {
-            var list = __instance.AllEquipmentListForReading;
-            for (var i = 0; i < list.Count; i++)
+            yield break;
+        }
+
+        var list = __instance.AllEquipmentListForReading;
+        foreach (var eq in list)
+        {
+            var smp = eq.def.GetModExtension<SagittariusMightPlantModExtention>();
+            if (smp == null)
             {
-                var eq = list[i];
-                var smp = eq.def.GetModExtension<SagittariusMightPlantModExtention>();
-                if (smp != null)
-                {
-                    yield return new Command_Action
-                    {
-                        defaultLabel = smp.label,
-                        defaultDesc = smp.description,
-                        icon = ContentFinder<Texture2D>.Get(smp.texPath),
-                        action = delegate
-                        {
-                            var bb = ThingMaker.MakeThing(GravityLanceDefOf.PlantedGravityLance);
-                            GenSpawn.Spawn(bb, __instance.pawn.Position, __instance.pawn.Map);
-                            eq.Destroy();
-                        }
-                    };
-                }
+                continue;
             }
+
+            var eq1 = eq;
+            yield return new Command_Action
+            {
+                defaultLabel = smp.label,
+                defaultDesc = smp.description,
+                icon = ContentFinder<Texture2D>.Get(smp.texPath),
+                action = delegate
+                {
+                    var bb = ThingMaker.MakeThing(GravityLanceDefOf.PlantedGravityLance);
+                    GenSpawn.Spawn(bb, __instance.pawn.Position, __instance.pawn.Map);
+                    eq1.Destroy();
+                }
+            };
         }
     }
 
     public static void CanEquipPostFix(Pawn pawn, HeavyWeapon options, ref bool __result)
     {
-        if (!__result && SA_HeavyWeaponExtentionInstances.Contains(options))
+        if (__result || !SA_HeavyWeaponExtentionInstances.Contains(options))
         {
-            if (pawn is { health: { } })
+            return;
+        }
+
+        if (pawn is not { health: not null })
+        {
+            return;
+        }
+
+        foreach (var hed in pawn.health.hediffSet.hediffs)
+        {
+            if (!SA_HeavyWeaponableHediffDefs.Contains(hed.def))
             {
-                foreach (var hed in pawn.health.hediffSet.hediffs)
-                {
-                    if (SA_HeavyWeaponableHediffDefs.Contains(hed.def))
-                    {
-                        __result = true;
-                        return;
-                    }
-                }
+                continue;
             }
+
+            __result = true;
+            return;
         }
     }
 
@@ -255,7 +248,7 @@ public static class Harmony_ExosuitHeavyWeapon
         SA_PawnsCheck.Clear();
         SA_ConcurrencyErrorSafetyNet.Clear();
         var baseFaction = basePawn.Faction;
-        var iv3 = checkVector.ToIntVec3() + basePawn.Position;
+        _ = checkVector.ToIntVec3() + basePawn.Position;
         //SA_PawnsCheck.AddRange(map.thingGrid.ThingsAt(iv3));
         for (var i = 0; i < 9; i++)
         {
@@ -266,18 +259,20 @@ public static class Harmony_ExosuitHeavyWeapon
         //SA_PawnsCheck.AddRange(map.thingGrid.ThingsAt(basePawn.Position));
         foreach (var thing in SA_PawnsCheck)
         {
-            if (thing is Pawn { apparel: { } } pawn && pawn.Faction == baseFaction && !pawn.Downed)
+            if (thing is not Pawn { apparel: not null } pawn || pawn.Faction != baseFaction || pawn.Downed)
             {
-                foreach (var app in pawn.apparel.WornApparel)
-                {
-                    var compC = app.TryGetComp<Comp_ExtendedShield>();
-                    if (compC is { shieldActive: true } && app is ShieldBeltExtended
-                        {
-                            ShieldState: ShieldState.Active
-                        })
+                continue;
+            }
+
+            foreach (var app in pawn.apparel.WornApparel)
+            {
+                var compC = app.TryGetComp<Comp_ExtendedShield>();
+                if (compC is { shieldActive: true } && app is ShieldBeltExtended
                     {
-                        SA_ConcurrencyErrorSafetyNet.Add(app);
-                    }
+                        ShieldState: ShieldState.Active
+                    })
+                {
+                    SA_ConcurrencyErrorSafetyNet.Add(app);
                 }
             }
         }
@@ -291,35 +286,37 @@ public static class Harmony_ExosuitHeavyWeapon
     public static bool TakeDamageExtendedShield(Thing __instance, DamageInfo dinfo,
         ref DamageWorker.DamageResult __result)
     {
-        if (__instance is Pawn p)
+        if (__instance is not Pawn p)
         {
-            var amountNow = dinfo.Amount;
-            foreach (ShieldBeltExtended damageMe in DefenderPawnShields(p, dinfo)
-                    ) //int damage = Convert.ToInt32(Mathf.Min(amountNow, damageMe.HitPoints));
-                //damageMe.HitPoints -= damage;
-                //DamageInfo ddClone = new DamageInfo(dinfo);
-                //ddClone.SetAmount(damage);
-                //damageMe.TakeDamage(ddClone);
-                /**if(damageMe.HitPoints <= 0){
-                    damageMe.Destroy();
-                }**/
-                //amountNow -= damage;
-            {
-                if (damageMe.CheckPreAbsorbDamage(dinfo))
-                {
-                    amountNow = 0;
-                    break;
-                }
-            }
-
-            //dinfo.SetAmount(amountNow);
-            if (amountNow == 0)
-            {
-                __result = new DamageWorker.DamageResult();
-                return false;
-            }
+            return true;
         }
 
-        return true;
+        var amountNow = dinfo.Amount;
+        foreach (var apparel in DefenderPawnShields(p, dinfo)
+                ) //int damage = Convert.ToInt32(Mathf.Min(amountNow, damageMe.HitPoints));
+            //damageMe.HitPoints -= damage;
+            //DamageInfo ddClone = new DamageInfo(dinfo);
+            //ddClone.SetAmount(damage);
+            //damageMe.TakeDamage(ddClone);
+            //amountNow -= damage;
+        {
+            var damageMe = (ShieldBeltExtended)apparel;
+            if (!damageMe.CheckPreAbsorbDamage(dinfo))
+            {
+                continue;
+            }
+
+            amountNow = 0;
+            break;
+        }
+
+        //dinfo.SetAmount(amountNow);
+        if (amountNow != 0)
+        {
+            return true;
+        }
+
+        __result = new DamageWorker.DamageResult();
+        return false;
     }
 }

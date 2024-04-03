@@ -49,18 +49,7 @@ public class ShieldBeltExtended : Apparel_Shield
 
     public bool compAllowsActive => this.TryGetComp<Comp_ExtendedShield>().shieldActive;
 
-    public ShieldState ShieldState
-    {
-        get
-        {
-            if (ticksToReset > 0)
-            {
-                return ShieldState.Resetting;
-            }
-
-            return ShieldState.Active;
-        }
-    }
+    public ShieldState ShieldState => ticksToReset > 0 ? ShieldState.Resetting : ShieldState.Active;
 
     private bool ShouldDisplay
     {
@@ -147,22 +136,22 @@ public class ShieldBeltExtended : Apparel_Shield
             return false;
         }
 
-        if (dinfo.Def.isRanged || dinfo.Def.isExplosive)
+        if (!dinfo.Def.isRanged && !dinfo.Def.isExplosive)
         {
-            energy -= dinfo.Amount * EnergyLossPerDamage;
-            if (energy < 0f)
-            {
-                Break();
-            }
-            else
-            {
-                AbsorbedDamage(dinfo);
-            }
-
-            return true;
+            return false;
         }
 
-        return false;
+        energy -= dinfo.Amount * EnergyLossPerDamage;
+        if (energy < 0f)
+        {
+            Break();
+        }
+        else
+        {
+            AbsorbedDamage(dinfo);
+        }
+
+        return true;
     }
 
     public void KeepDisplaying()
@@ -189,7 +178,7 @@ public class ShieldBeltExtended : Apparel_Shield
 
     private void Break()
     {
-        SoundDefOf.EnergyShield_Broken.PlayOneShot(new TargetInfo(Wearer.Position, Wearer.Map));
+        SoundDef.Named("EnergyShield_Broken").PlayOneShot(new TargetInfo(Wearer.Position, Wearer.Map));
         FleckMaker.Static(Wearer.TrueCenter(), Wearer.Map, FleckDefOf.ExplosionFlash, 12f);
         for (var i = 0; i < 6; i++)
         {
@@ -217,25 +206,27 @@ public class ShieldBeltExtended : Apparel_Shield
     public override void DrawWornExtras()
     {
         base.DrawWornExtras();
-        if (ShieldState == ShieldState.Active && compAllowsActive && ShouldDisplay)
+        if (ShieldState != ShieldState.Active || !compAllowsActive || !ShouldDisplay)
         {
-            var num = Mathf.Lerp(1.2f, 1.55f, energy);
-            var vector = Wearer.Drawer.DrawPos;
-            vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
-            var num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
-            if (num2 < 8)
-            {
-                var num3 = (8 - num2) / 8f * 0.05f;
-                vector += impactAngleVect * num3;
-                num -= num3;
-            }
-
-            num *= 2.0f;
-            var angle = (float)Rand.Range(0, 360);
-            var s = new Vector3(num, 1f, num);
-            var matrix = default(Matrix4x4);
-            matrix.SetTRS(vector, Quaternion.AngleAxis(angle, Vector3.up), s);
-            Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
+            return;
         }
+
+        var num = Mathf.Lerp(1.2f, 1.55f, energy);
+        var vector = Wearer.Drawer.DrawPos;
+        vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+        var num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
+        if (num2 < 8)
+        {
+            var num3 = (8 - num2) / 8f * 0.05f;
+            vector += impactAngleVect * num3;
+            num -= num3;
+        }
+
+        num *= 2.0f;
+        var angle = (float)Rand.Range(0, 360);
+        var s = new Vector3(num, 1f, num);
+        var matrix = default(Matrix4x4);
+        matrix.SetTRS(vector, Quaternion.AngleAxis(angle, Vector3.up), s);
+        Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
     }
 }

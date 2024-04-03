@@ -22,24 +22,23 @@ public class Comp_GravityLanceExplode : ThingComp
     {
         base.CompTick();
         ticksTillDetonation -= 1;
-        if (ticksTillDetonation == 0)
+        switch (ticksTillDetonation)
         {
-            GenExplosion.DoExplosion(
-                parent.Position,
-                parent.Map,
-                Props.explosionRadius,
-                Props.damageDef,
-                parent,
-                Props.damageAmount,
-                Props.armourPenetration);
-            Props.impactSoundDef.PlayOneShot(
-                SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map))
-            );
-            parent.Destroy();
-        }
-        else
-        {
-            if (ticksTillDetonation <= 240)
+            case 0:
+                GenExplosion.DoExplosion(
+                    parent.Position,
+                    parent.Map,
+                    Props.explosionRadius,
+                    Props.damageDef,
+                    parent,
+                    Props.damageAmount,
+                    Props.armourPenetration);
+                Props.impactSoundDef.PlayOneShot(
+                    SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map))
+                );
+                parent.Destroy();
+                break;
+            case <= 240:
             {
                 if (ticksTillDetonation == 240)
                 {
@@ -47,12 +46,19 @@ public class Comp_GravityLanceExplode : ThingComp
                         SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map))
                     );
                 }
+
+                break;
             }
-            else if ((ticksTillDetonation - 240) % 60 == 0)
+            default:
             {
-                Props.countDownSoundDef.PlayOneShot(
-                    SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map))
-                );
+                if ((ticksTillDetonation - 240) % 60 == 0)
+                {
+                    Props.countDownSoundDef.PlayOneShot(
+                        SoundInfo.InMap(new TargetInfo(parent.Position, parent.Map))
+                    );
+                }
+
+                break;
             }
         }
     }
