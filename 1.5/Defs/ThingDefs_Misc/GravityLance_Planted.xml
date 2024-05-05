@@ -57,7 +57,7 @@
     <defName>PlantedGravityLance</defName>
     <label>Planted Sagittarius's Might</label>
     <description>A Sagittarius's Might planted onto the ground. Will explode soon, so you better get away as soon as you can!</description>
-    <thingClass>ThingWithComps</thingClass>
+    <!-- <thingClass>ThingWithComps</thingClass> -->
     <graphicData>
       <texPath>Building/PlantedGravityLance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
