@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: guardian shield -->
+  <HMW__GuardianShield.label>guardian shield</HMW__GuardianShield.label>
+  <!-- EN: A shield designed to take a beating.\n    \nThe Guardian Shield is capable of tanking a barrage of heavy charge blaster once its shields are active. Use this to get your troops in melee range. -->
+  <HMW__GuardianShield.description>A shield designed to take a beating.
+    
+The Guardian Shield is capable of tanking a barrage of heavy charge blaster once its shields are active. Use this to get your troops in melee range.</HMW__GuardianShield.description>
+  <!-- EN: Toggles whether you want to extend your shield or not. -->
+  <HMW__GuardianShield.comps.Comp_ExtendedShield.shieldToggleDesc>Toggles whether you want to extend your shield or not.</HMW__GuardianShield.comps.Comp_ExtendedShield.shieldToggleDesc>
+  <!-- EN: Toggle Shield -->
+  <HMW__GuardianShield.comps.Comp_ExtendedShield.shieldToggleLabel>Toggle Shield</HMW__GuardianShield.comps.Comp_ExtendedShield.shieldToggleLabel>
+</LanguageData>

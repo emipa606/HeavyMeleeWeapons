@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
+using VEF.Apparels;
 using Verse;
 using Verse.Sound;
-using VFECore;
 
 namespace HeavyMelee;
 
@@ -47,7 +47,7 @@ public class ShieldBeltExtended : Apparel_Shield
 
     public float Energy => energy;
 
-    public bool compAllowsActive => this.TryGetComp<Comp_ExtendedShield>().shieldActive;
+    private bool compAllowsActive => this.TryGetComp<Comp_ExtendedShield>().shieldActive;
 
     public ShieldState ShieldState => ticksToReset > 0 ? ShieldState.Resetting : ShieldState.Active;
 
@@ -95,7 +95,7 @@ public class ShieldBeltExtended : Apparel_Shield
         return EnergyMax * ApparelScorePerEnergyMax;
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (Wearer == null)
@@ -211,13 +211,13 @@ public class ShieldBeltExtended : Apparel_Shield
             return;
         }
 
-        var num = Mathf.Lerp(1.2f, 1.55f, energy);
+        var num = Mathf.Lerp(MinDrawSize, MaxDrawSize, energy);
         var vector = Wearer.Drawer.DrawPos;
         vector.y = AltitudeLayer.MoteOverhead.AltitudeFor();
         var num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
-        if (num2 < 8)
+        if (num2 < JitterDurationTicks)
         {
-            var num3 = (8 - num2) / 8f * 0.05f;
+            var num3 = (JitterDurationTicks - num2) / 8f * MaxDamagedJitterDist;
             vector += impactAngleVect * num3;
             num -= num3;
         }

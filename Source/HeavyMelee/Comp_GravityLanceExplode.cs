@@ -5,9 +5,9 @@ namespace HeavyMelee;
 
 public class Comp_GravityLanceExplode : ThingComp
 {
-    public int ticksTillDetonation = -1;
+    private int ticksTillDetonation = -1;
 
-    public CompProperties_GravityLanceExplode Props => (CompProperties_GravityLanceExplode)props;
+    private CompProperties_GravityLanceExplode Props => (CompProperties_GravityLanceExplode)props;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {

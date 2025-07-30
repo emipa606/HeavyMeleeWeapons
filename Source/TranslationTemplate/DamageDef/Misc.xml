@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: flame -->
+  <Flame30Degrees.label>flame</Flame30Degrees.label>
+  <!-- EN: {0} has burned to death. -->
+  <Flame30Degrees.deathMessage>{0} has burned to death.</Flame30Degrees.deathMessage>
+  <!-- EN: psychic smash -->
+  <PsychicSmash.label>psychic smash</PsychicSmash.label>
+  <!-- EN: {0} has been beaten to death. -->
+  <PsychicSmash.deathMessage>{0} has been beaten to death.</PsychicSmash.deathMessage>
+</LanguageData>

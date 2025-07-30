@@ -8,21 +8,20 @@ namespace HeavyMelee;
 
 public class HeavyMeleeMod : Mod
 {
-    private static readonly Dictionary<CompEquippable, CompPsychicShock> compCache =
-        new Dictionary<CompEquippable, CompPsychicShock>();
+    private static readonly Dictionary<CompEquippable, CompPsychicShock> compCache = new();
 
     public HeavyMeleeMod(ModContentPack content) : base(content)
     {
         var harm = new Harmony("PitchStone.HeavyMeleeWeapons");
-        harm.Patch(AccessTools.Method(typeof(CompEquippable), "GetVerbsCommands"),
-            postfix: new HarmonyMethod(typeof(HeavyMeleeMod), "AddShockCommand"));
-        harm.Patch(AccessTools.Method(typeof(Verb), "VerbTick"),
-            postfix: new HarmonyMethod(GetType(), "VerbPostTick"));
+        harm.Patch(AccessTools.Method(typeof(CompEquippable), nameof(CompEquippable.GetVerbsCommands)),
+            postfix: new HarmonyMethod(typeof(HeavyMeleeMod), nameof(AddShockCommand)));
+        harm.Patch(AccessTools.Method(typeof(Verb), nameof(Verb.VerbTick)),
+            postfix: new HarmonyMethod(GetType(), nameof(VerbPostTick)));
         harm.Patch(AccessTools.Method(typeof(VerbTracker), "CreateVerbTargetCommand"),
-            new HarmonyMethod(AccessTools.Method(GetType(), "UseCustomCommand1")));
+            new HarmonyMethod(AccessTools.Method(GetType(), nameof(UseCustomCommand1))));
         harm.Patch(
             AccessTools.Method(Type.GetType("MVCF.Utilities.PawnVerbGizmoUtility, MVCF"),
-                "GetGizmosForVerb"), postfix: new HarmonyMethod(GetType(), "UseCustomCommand2"));
+                "GetGizmosForVerb"), postfix: new HarmonyMethod(GetType(), nameof(UseCustomCommand2)));
     }
 
     public static bool UseCustomCommand1(

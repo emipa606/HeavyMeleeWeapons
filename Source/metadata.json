@@ -2,5 +2,14 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 44448,
+  "LinesOfXML": 84659,
+  "CodeBaseSize": 81,
+  "LastXmlCleaning": "2025-07-30T22:18:30.2488504+02:00",
+  "SocialImageSet": true,
+  "SearchTags": " sizeable swords"
 }

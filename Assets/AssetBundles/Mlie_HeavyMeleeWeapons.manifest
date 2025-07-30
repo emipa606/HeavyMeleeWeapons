@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 2148409999
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 07166f43ad698f3fb28489969802e93b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 07166f43ad698f3fb28489969802e93b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/RelicMaul/RelicHammer.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_MonoSword.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/KIT_GuardianShield_east.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/SagittariusMight/SagittariusMightDetonation.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_RocketHammer.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/ShieldExtended_south.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/GuardianShield_south.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/GuardianShield.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/KIT_GuardianShield_south.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/KIT_GuardianShield.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/ShieldExtended_east.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/PhammerA.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/ZeusSword/BurstBlade.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/ShieldExtended.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/RocketHammer/RocketHammer.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/SagittariusMight/SagittariusMightCountdown.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/SagittariusMight/SagittariusMightOnHit.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/ZeusSword/LightMonosword.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/GuardianShield_east.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/SagittariusMight/SagittariusMightCountdown4SEC.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_PlasmaLance.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/KIT_GuardianShield_north.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/Pulse_Hammer.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/GuardianShield_north.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Sounds/ZeusSword/HeavyMonosword.wav
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_RelicHammer.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/SagittariusMight/Implosion.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_ZeusSword.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Building/PlantedGravityLance.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Pawn/GuardianShield/ShieldExtended_north.png
+- Assets/Data/Mlie.HeavyMeleeWeapons/Textures/Weapons/KIT_GravityStaff.png
+Dependencies: []

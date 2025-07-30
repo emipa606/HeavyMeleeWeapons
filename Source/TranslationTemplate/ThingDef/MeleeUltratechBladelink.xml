@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: persona plasmalance -->
+  <HMW_MeleeWeapon_PersonaFlameLance.label>persona plasmalance</HMW_MeleeWeapon_PersonaFlameLance.label>
+  <!-- EN: A metal-cored lance with a cutting edge that is able to set enemies on fire. The lance is capable of firing an incendiary charge, breaking defensive lines and roasting bugs. \n  \nIts great weight requires the user to wear an Exoframe or flatter under the burden.\n	\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else. -->
+  <HMW_MeleeWeapon_PersonaFlameLance.description>A metal-cored lance with a cutting edge that is able to set enemies on fire. The lance is capable of firing an incendiary charge, breaking defensive lines and roasting bugs. 
+  
+Its great weight requires the user to wear an Exoframe or flatter under the burden.
+	
+This weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</HMW_MeleeWeapon_PersonaFlameLance.description>
+  <!-- EN: Flame Burst -->
+  <HMW_MeleeWeapon_PersonaFlameLance.comps.Comp_VerbProps.verbProps.0.label>Flame Burst</HMW_MeleeWeapon_PersonaFlameLance.comps.Comp_VerbProps.verbProps.0.label>
+  <!-- EN: handle -->
+  <HMW_MeleeWeapon_PersonaFlameLance.tools.handle.label>handle</HMW_MeleeWeapon_PersonaFlameLance.tools.handle.label>
+  <!-- EN: point -->
+  <HMW_MeleeWeapon_PersonaFlameLance.tools.point.label>point</HMW_MeleeWeapon_PersonaFlameLance.tools.point.label>
+  <!-- EN: edge -->
+  <HMW_MeleeWeapon_PersonaFlameLance.tools.edge.label>edge</HMW_MeleeWeapon_PersonaFlameLance.tools.edge.label>
+  <!-- EN: Flame Burst -->
+  <HMW_MeleeWeapon_PersonaFlameLance.verbs.Flame_Burst.label>Flame Burst</HMW_MeleeWeapon_PersonaFlameLance.verbs.Flame_Burst.label>
+  <!-- EN: persona heavy monosword -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.label>persona heavy monosword</HMW_MeleeWeapon_PersonaHeavyMonoSword.label>
+  <!-- EN: A crystal-metallic heavy longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.A crystal-metallic heavy longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its fearsome shape intimidates foes.\n  \nIts great weight requires the user to wear an Exoframe, or falter under the burden.\n	\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else. -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.description>A crystal-metallic heavy longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.A crystal-metallic heavy longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its fearsome shape intimidates foes.
+  
+Its great weight requires the user to wear an Exoframe, or falter under the burden.
+	
+This weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</HMW_MeleeWeapon_PersonaHeavyMonoSword.description>
+  <!-- EN: handle -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.handle.label>handle</HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.handle.label>
+  <!-- EN: point -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.point.label>point</HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.point.label>
+  <!-- EN: edge -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.edge.label>edge</HMW_MeleeWeapon_PersonaHeavyMonoSword.tools.edge.label>
+  <!-- EN: Cleave -->
+  <HMW_MeleeWeapon_PersonaHeavyMonoSword.verbs.Cleave.label>Cleave</HMW_MeleeWeapon_PersonaHeavyMonoSword.verbs.Cleave.label>
+  <!-- EN: persona relic maul -->
+  <HMW_MeleeWeapon_PersonaPsychicWarhammer.label>persona relic maul</HMW_MeleeWeapon_PersonaPsychicWarhammer.label>
+  <!-- EN: An ultratech maul threaded with psychic focusing materials. A replica of the old legend, its main purpose is to enhance the wielder's psychic sensitivity and neural heat dissipation, allowing more use of psychic powers.\n  \nIts great weight requires the user to wear an Exoframe, or flatter under the burden.\n	\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else. -->
+  <HMW_MeleeWeapon_PersonaPsychicWarhammer.description>An ultratech maul threaded with psychic focusing materials. A replica of the old legend, its main purpose is to enhance the wielder's psychic sensitivity and neural heat dissipation, allowing more use of psychic powers.
+  
+Its great weight requires the user to wear an Exoframe, or flatter under the burden.
+	
+This weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</HMW_MeleeWeapon_PersonaPsychicWarhammer.description>
+  <!-- EN: handle -->
+  <HMW_MeleeWeapon_PersonaPsychicWarhammer.tools.handle.label>handle</HMW_MeleeWeapon_PersonaPsychicWarhammer.tools.handle.label>
+  <!-- EN: head -->
+  <HMW_MeleeWeapon_PersonaPsychicWarhammer.tools.head.label>head</HMW_MeleeWeapon_PersonaPsychicWarhammer.tools.head.label>
+  <!-- EN: persona burst  blade -->
+  <HMW_MeleeWeapon_PersonaZeusSword.label>persona burst  blade</HMW_MeleeWeapon_PersonaZeusSword.label>
+  <!-- EN: A crystal-metallic greatsword infused with mechanites that maintain a mono-molecular cutting edge. The sword has built-in EMP emmiters, shocking those unfortunate enough to be on the recieving end of it.\n  \nIt cuts through even thick armor with ease, but its great weight requires the use of an exoframe or similar apparel.\n	\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else. -->
+  <HMW_MeleeWeapon_PersonaZeusSword.description>A crystal-metallic greatsword infused with mechanites that maintain a mono-molecular cutting edge. The sword has built-in EMP emmiters, shocking those unfortunate enough to be on the recieving end of it.
+  
+It cuts through even thick armor with ease, but its great weight requires the use of an exoframe or similar apparel.
+	
+This weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</HMW_MeleeWeapon_PersonaZeusSword.description>
+  <!-- EN: EMP Burst -->
+  <HMW_MeleeWeapon_PersonaZeusSword.comps.Comp_VerbProps.verbProps.0.label>EMP Burst</HMW_MeleeWeapon_PersonaZeusSword.comps.Comp_VerbProps.verbProps.0.label>
+  <!-- EN: handle -->
+  <HMW_MeleeWeapon_PersonaZeusSword.tools.handle.label>handle</HMW_MeleeWeapon_PersonaZeusSword.tools.handle.label>
+  <!-- EN: point -->
+  <HMW_MeleeWeapon_PersonaZeusSword.tools.point.label>point</HMW_MeleeWeapon_PersonaZeusSword.tools.point.label>
+  <!-- EN: edge -->
+  <HMW_MeleeWeapon_PersonaZeusSword.tools.edge.label>edge</HMW_MeleeWeapon_PersonaZeusSword.tools.edge.label>
+  <!-- EN: EMP Burst -->
+  <HMW_MeleeWeapon_PersonaZeusSword.verbs.EMP_Burst.label>EMP Burst</HMW_MeleeWeapon_PersonaZeusSword.verbs.EMP_Burst.label>
+</LanguageData>

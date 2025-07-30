@@ -5,7 +5,7 @@ namespace HeavyMelee;
 
 public class Verb_Cleave : Verb, IVerbTick, IVerbCustomCommand, IVerbCooldown
 {
-    public const float COOLDOWN = 12f;
+    private const float COOLDOWN = 12f;
     private int cooldownTicksLeft;
     public float CooldownPercentLeft => cooldownTicksLeft / (float)COOLDOWN.SecondsToTicks();
 

@@ -31,7 +31,7 @@ public class Gizmo_EnergyShieldExtendedStatus : Gizmo
         var rect3 = rect2;
         rect3.height = rect.height / 2f;
         Text.Font = GameFont.Tiny;
-        Widgets.Label(rect3, shield.LabelCap);
+        Widgets.Label(rect3, "");
         var rect4 = rect2;
         rect4.yMin = rect2.y + (rect2.height / 2f);
         var fillPercent = shield.Energy / Mathf.Max(1f, shield.EnergyMax);

@@ -6,7 +6,7 @@ namespace HeavyMelee;
 [StaticConstructorOnStartup]
 public class Command_VerbTargetCooldown : Command_VerbTarget
 {
-    public static readonly Texture2D CooldownTex =
+    private static readonly Texture2D CooldownTex =
         SolidColorMaterials.NewSolidColorTexture(new Color(1f, 1f, 1f, 0.1f));
 
     public Command_VerbTargetCooldown(Command_VerbTarget old)

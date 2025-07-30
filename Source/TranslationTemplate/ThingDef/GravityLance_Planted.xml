@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Mote -->
+  <Mote_SagittariusMightImplosion.label>Mote</Mote_SagittariusMightImplosion.label>
+  <!-- EN: Planted Sagittarius's Might -->
+  <PlantedGravityLance.label>Planted Sagittarius's Might</PlantedGravityLance.label>
+  <!-- EN: A Sagittarius's Might planted onto the ground. Will explode soon, so you better get away as soon as you can! -->
+  <PlantedGravityLance.description>A Sagittarius's Might planted onto the ground. Will explode soon, so you better get away as soon as you can!</PlantedGravityLance.description>
+</LanguageData>

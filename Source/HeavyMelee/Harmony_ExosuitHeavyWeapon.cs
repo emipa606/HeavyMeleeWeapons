@@ -1,29 +1,28 @@
 ﻿using System.Collections.Generic;
 using HarmonyLib;
-using HeavyWeapons;
 using RimWorld;
 using UnityEngine;
+using VEF.Apparels;
+using VEF.Weapons;
 using Verse;
-using VFECore;
-using Patch_FloatMenuMakerMap = HeavyWeapons.Patch_FloatMenuMakerMap;
 
 namespace HeavyMelee;
 
 [StaticConstructorOnStartup]
 public static class Harmony_ExosuitHeavyWeapon
 {
-    public static readonly HashSet<string> SA_HeavyWeaponHediffString = [];
-    public static readonly HashSet<HediffDef> SA_HeavyWeaponableHediffDefs = [];
-    public static readonly HashSet<string> SA_HeavyWeaponThingString = [];
-    public static readonly HashSet<ThingDef> SA_HeavyWeaponThingDefs = [];
+    private static readonly HashSet<string> SA_HeavyWeaponHediffString = [];
+    private static readonly HashSet<HediffDef> SA_HeavyWeaponableHediffDefs = [];
+    private static readonly HashSet<string> SA_HeavyWeaponThingString = [];
+    private static readonly HashSet<ThingDef> SA_HeavyWeaponThingDefs = [];
 
-    public static readonly HashSet<HeavyWeapon>
+    private static readonly HashSet<HeavyWeapon>
         SA_HeavyWeaponExtentionInstances =
         [
         ]; //each of the heavy weapon has a unique instance of this class, so this can be used to keep track of which weapon
 
-    public static readonly List<Thing> SA_PawnsCheck = [];
-    public static readonly List<Apparel> SA_ConcurrencyErrorSafetyNet = [];
+    private static readonly List<Thing> SA_PawnsCheck = [];
+    private static readonly List<Apparel> SA_ConcurrencyErrorSafetyNet = [];
 
     static Harmony_ExosuitHeavyWeapon()
     {
@@ -81,27 +80,43 @@ public static class Harmony_ExosuitHeavyWeapon
         var harmony = new Harmony("ExoHW.ExosuitHeavyWeapon");
         //harmony.PatchAll();
 
-        harmony.Patch(
-            AccessTools.Method(typeof(Patch_FloatMenuMakerMap.AddHumanlikeOrders_Fix), "CanEquip"),
-            null,
-            new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(CanEquipPostFix)));
+        //harmony.Patch(
+        //    AccessTools.Method(typeof(Patch_FloatMenuMakerMap.AddHumanlikeOrders_Fix), "CanEquip"),
+        //    null,
+        //    new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(CanEquipPostFix)));
 
         harmony.Patch(
-            AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos"),
+            AccessTools.Method(typeof(Pawn_EquipmentTracker), nameof(Pawn_EquipmentTracker.GetGizmos)),
             null,
             new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(GetExtraEquipmentGizmosPassThrough)));
 
         harmony.Patch(
-            AccessTools.Method(typeof(Thing), "TakeDamage"),
+            AccessTools.Method(typeof(Thing), nameof(Thing.TakeDamage)),
             new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(TakeDamageExtendedShield)));
 
         harmony.Patch(
-            AccessTools.Method(typeof(Apparel_Shield), "DrawWornExtras"),
+            AccessTools.Method(typeof(Apparel_Shield), nameof(Apparel_Shield.DrawWornExtras)),
             null,
             new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(DrawWornExtraPost))
         );
 
+        harmony.Patch(
+            AccessTools.Method(typeof(ThingDef), "get_IsRangedWeapon"),
+            null,
+            new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(ThingDef_IsRangedWeapon))
+        );
+
         //Harmony_YayoCombat_OversizedWeaponTranspiler.tryPatch_YC_OWT(harmony);
+    }
+
+    public static void ThingDef_IsRangedWeapon(ThingDef __instance, ref bool __result)
+    {
+        if (__result || !SA_HeavyWeaponThingDefs.Contains(__instance))
+        {
+            return;
+        }
+
+        __result = true;
     }
 
     public static void DrawWornExtraPost(Apparel_Shield __instance)
@@ -176,7 +191,7 @@ public static class Harmony_ExosuitHeavyWeapon
         return p.Faction != null;
     }
 
-    public static IEnumerable<Apparel> DefenderPawnShields(Pawn basePawn, DamageInfo di)
+    private static IEnumerable<Apparel> DefenderPawnShields(Pawn basePawn, DamageInfo di)
     {
         var map = basePawn.Map;
         if (map == null)

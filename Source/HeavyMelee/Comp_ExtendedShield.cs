@@ -3,19 +3,21 @@ using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
+using VEF.Apparels;
 using Verse;
-using VFECore;
 
 namespace HeavyMelee;
 
 public class Comp_ExtendedShield : ThingComp
 {
-    public static readonly List<IntVec3>[] DirectionalCheckVector3 = new List<IntVec3>[4];
-    public static readonly FieldInfo LandedAccess = AccessTools.DeclaredField(typeof(Projectile), "landed");
-    public static readonly MethodInfo ImpactAccess = AccessTools.DeclaredMethod(typeof(Projectile), "Impact");
-    public static readonly FieldInfo ShieldGraphic = AccessTools.DeclaredField(typeof(Apparel_Shield), "shieldGraphic");
+    private static readonly List<IntVec3>[] DirectionalCheckVector3 = new List<IntVec3>[4];
+    private static readonly FieldInfo LandedAccess = AccessTools.DeclaredField(typeof(Projectile), "landed");
+    private static readonly MethodInfo ImpactAccess = AccessTools.DeclaredMethod(typeof(Projectile), "Impact");
 
-    public bool recacheGraphic = true;
+    private static readonly FieldInfo
+        ShieldGraphic = AccessTools.DeclaredField(typeof(Apparel_Shield), "shieldGraphic");
+
+    private bool recacheGraphic = true;
     public bool shieldActive;
 
     static Comp_ExtendedShield()
@@ -54,7 +56,7 @@ public class Comp_ExtendedShield : ThingComp
         DirectionalCheckVector3[3].Add(new IntVec3(-1, 0, -1));
     }
 
-    public CompProperties_ExtendedShield Props => props as CompProperties_ExtendedShield;
+    private CompProperties_ExtendedShield Props => props as CompProperties_ExtendedShield;
 
     public override void PostDraw()
     {
@@ -100,7 +102,7 @@ public class Comp_ExtendedShield : ThingComp
         }
     }
 
-    public Pawn getEquipper()
+    private Pawn getEquipper()
     {
         var holder = ParentHolder;
         switch (holder)

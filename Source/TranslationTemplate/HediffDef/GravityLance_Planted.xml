@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: implosion crack -->
+  <SagittariusMightImplosion.label>implosion crack</SagittariusMightImplosion.label>
+  <!-- EN: A wound. -->
+  <SagittariusMightImplosion.description>A wound.</SagittariusMightImplosion.description>
+  <!-- EN: permanent crack -->
+  <SagittariusMightImplosion.comps.HediffComp_GetsPermanent.permanentLabel>permanent crack</SagittariusMightImplosion.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: an implosion wound -->
+  <SagittariusMightImplosion.labelNoun>an implosion wound</SagittariusMightImplosion.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <SagittariusMightImplosion.labelNounPretty>{0} in the {1}</SagittariusMightImplosion.labelNounPretty>
+</LanguageData>

@@ -20,8 +20,8 @@ public class DamageWorker_Flame_30Degrees : DamageWorker_Flame
         }
 
         Log.Message("ExplosionCellsToHit!");
-        return base.ExplosionCellsToHit(center, map, radius, needLOSToCell1, needLOSToCell2, affectedAngle).Where(
-            cell =>
+        return base.ExplosionCellsToHit(center, map, radius, needLOSToCell1, needLOSToCell2, affectedAngle)
+            .Where(cell =>
             {
                 var angle1 = cell.ToVector3().AngleToFlat(ExplosionOriginator.DrawPos) - 90f;
                 while (angle1 < 0)

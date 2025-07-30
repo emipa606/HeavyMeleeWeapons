@@ -1,6 +1,7 @@
-# HeavyMeleeWeapons
+# [Heavy Melee Weapons (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2932628115)
 
 ![Image](https://i.imgur.com/buuPQel.png)
+
 Update of Blazen_Rock, xrushha, legodude17, amnabi, Kitsunes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2418407014
 with permission
@@ -10,6 +11,7 @@ with permission
 ![Image](https://i.imgur.com/pufA0kM.png)
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
+
 This mod is officially dead. I'm forever grateful to all the people who supported this project. If you'd like to adopt this mod, hit me up on the Rimworld Discord: Blazen_Rock
 [hr][/hr]
 # Big Swords and Exoframes Help Brawlers Keep Mechanoids at Bay.
@@ -38,10 +40,10 @@ Added with the 1.1 update.
 #  Compatibility
  
 Heavy Melee Weapons has compatibility patches for these mods:
-**[https://steamcommunity.com/sharedfiles/filedetails/?edit=true&amp;id=2520200610](Combat Extended)**- Caulaflourer
-[https://steamcommunity.com/sharedfiles/filedetails/?id=2329126791&amp;searchtext=Vanilla+Weapons+Expanded](Vanilla Weapons Expanded - Heavy Weapons)- Allows Pawns with Exoframes to equip heavy melee weapons
-Misha's [https://steamcommunity.com/sharedfiles/filedetails/?id=2019999267&amp;searchtext=Craftable+Royalty+Weapons](Craftable Royalty Weapons) - Research required to craft HMWs is merged into Ultratech Weapons.
-[https://steamcommunity.com/sharedfiles/filedetails/?id=2178003816&amp;searchtext=Persona+bonding+Forgw](Persona Bond Forge)- Adds craftable persona variants of Heavy Melee Weapons
+**[Combat Extended](https://steamcommunity.com/sharedfiles/filedetails/?edit=true&amp;id=2520200610)**- Caulaflourer
+[Vanilla Weapons Expanded - Heavy Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=2329126791&amp;searchtext=Vanilla+Weapons+Expanded)- Allows Pawns with Exoframes to equip heavy melee weapons
+Misha's [Craftable Royalty Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=2019999267&amp;searchtext=Craftable+Royalty+Weapons) - Research required to craft HMWs is merged into Ultratech Weapons.
+[Persona Bond Forge](https://steamcommunity.com/sharedfiles/filedetails/?id=2178003816&amp;searchtext=Persona+bonding+Forgw)- Adds craftable persona variants of Heavy Melee Weapons
 
 Heavy Melee Weapons must be loaded after:
 Harmony
@@ -49,36 +51,37 @@ Royalty
 Vanilla Expanded Framework
 
 Heavy Melee Weapons should be loaded before:
-[https://steamcommunity.com/sharedfiles/filedetails/?id=2364527746](Vanilla Weapons Expanded - Heavy - Reloading Patch)
+[Vanilla Weapons Expanded - Heavy - Reloading Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=2364527746)
 
 # Language Patches
 
-[https://steamcommunity.com/sharedfiles/filedetails/?id=2508921477&amp;tscn=1623300371](Chinese) - Made by MZM_GOW
+[Chinese](https://steamcommunity.com/sharedfiles/filedetails/?id=2508921477&amp;tscn=1623300371) - Made by MZM_GOW
 
 # Credits
 
-Art by [https://steamcommunity.com/id/aquelekitsune/myworkshopfiles/?appid=294100](Kitsune)
-Workshop Graphics by [https://steamcommunity.com/id/unnamedender/myworkshopfiles/](Halno)
-XML by [https://steamcommunity.com/id/xrushha/myworkshopfiles/?appid=294100](xrushha)
-C# by [https://steamcommunity.com/id/legodude17/myworkshopfiles/?appid=294100]legodude17[/url] &amp; [url=https://steamcommunity.com/profiles/76561199123504894/myworkshopfiles/](Amnabi)
-[https://steamcommunity.com/id/Oskarpotocki/myworkshopfiles/]Oskar Potocki[/url] for allowing the use of his code in the mod and the textures visible in thumbnail([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2016436324](Vanilla Textures Expanded)).
-CE Patch by [https://steamcommunity.com/profiles/76561198392166105/myworkshopfiles/](Caulaflourer)
+Art by [Kitsune](https://steamcommunity.com/id/aquelekitsune/myworkshopfiles/?appid=294100)
+Workshop Graphics by [Halno](https://steamcommunity.com/id/unnamedender/myworkshopfiles/)
+XML by [xrushha](https://steamcommunity.com/id/xrushha/myworkshopfiles/?appid=294100)
+C# by [legodude17](https://steamcommunity.com/id/legodude17/myworkshopfiles/?appid=294100) &amp; [Amnabi](https://steamcommunity.com/profiles/76561199123504894/myworkshopfiles/)
+[Oskar Potocki](https://steamcommunity.com/id/Oskarpotocki/myworkshopfiles/) for allowing the use of his code in the mod and the textures visible in thumbnail([Vanilla Textures Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2016436324)).
+CE Patch by [Caulaflourer](https://steamcommunity.com/profiles/76561198392166105/myworkshopfiles/)
 
 
-[https://discord.gg/7befJWr9xS]![Image]((https://i.imgur.com/cfoFEMA.png))
+[![Image](https://i.imgur.com/cfoFEMA.png)](https://discord.gg/7befJWr9xS)
 PackageId:Pitchstone.Heavy Melee Weapons
 	
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
+
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404](Uploader) and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115]![Image]((https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&style=plastic&color=9f1111&labelColor=black))
+[![Image](https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115) | tags:  sizeable swords
