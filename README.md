@@ -1,6 +1,6 @@
 # [Heavy Melee Weapons (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2932628115)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Blazen_Rock, xrushha, legodude17, amnabi, Kitsunes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2418407014
@@ -8,9 +8,9 @@ with permission
 
 - Added EnableOversizedWeapons as a requirement instead of including it in the mod
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 This mod is officially dead. I'm forever grateful to all the people who supported this project. If you'd like to adopt this mod, hit me up on the Rimworld Discord: Blazen_Rock
 [hr][/hr]
@@ -21,20 +21,20 @@ Have you ever wanted to chop mechanoids to pieces with an oversized sword? Lay w
 # Tools of the Trade
 
 Heavy Melee Weapons provides users to make melee combat a bit more engaging via the introduction of powerful weapons and equipment.
-![Image](https://imgur.com/RTpSa8u.png)
+![Image](https://img.litet.net/RTpSa8u.png)
 
-![Image](https://imgur.com/7tDeUyH.png)
+![Image](https://img.litet.net/7tDeUyH.png)
 
-![Image](https://imgur.com/tZheqgC.png)
+![Image](https://img.litet.net/tZheqgC.png)
 
-![Image](https://imgur.com/AxgMAFk.png)
+![Image](https://img.litet.net/AxgMAFk.png)
 
 Added with the 1.1 update.
-![Image](https://imgur.com/DvEZOUW.png)
+![Image](https://img.litet.net/DvEZOUW.png)
 
-![Image](https://imgur.com/eh5mtdT.png)
+![Image](https://img.litet.net/eh5mtdT.png)
 
-![Image](https://imgur.com/g9ujuvU.png)
+![Image](https://img.litet.net/g9ujuvU.png)
 
 
 #  Compatibility
@@ -67,16 +67,16 @@ C# by [legodude17](https://steamcommunity.com/id/legodude17/myworkshopfiles/?app
 CE Patch by [Caulaflourer](https://steamcommunity.com/profiles/76561198392166105/myworkshopfiles/)
 
 
-[![Image](https://i.imgur.com/cfoFEMA.png)](https://discord.gg/7befJWr9xS)
+[![Image](https://img.litet.net/cfoFEMA.png)](https://discord.gg/7befJWr9xS)
 PackageId:Pitchstone.Heavy Melee Weapons
 	
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -84,4 +84,4 @@ PackageId:Pitchstone.Heavy Melee Weapons
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115) | tags:  sizeable swords
+[![Image](https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115) | tags: sizeable swords

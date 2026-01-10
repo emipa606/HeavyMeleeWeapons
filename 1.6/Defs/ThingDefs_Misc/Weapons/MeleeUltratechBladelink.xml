@@ -87,6 +87,7 @@
       <li Class="VEF.Weapons.HeavyWeapon">
         <isHeavy>true</isHeavy>
         <supportedArmors>
+          <li>Apparel_PowerArmor</li>
           <li>VWE_Apparel_Exoframe</li>
           <li>SF_PoweredAssaultArmor</li>
           <li>SF_EngineerPowerArmor</li>
@@ -207,6 +208,7 @@
       <li Class="VEF.Weapons.HeavyWeapon">
         <isHeavy>true</isHeavy>
         <supportedArmors>
+          <li>Apparel_PowerArmor</li>
           <li>VWE_Apparel_Exoframe</li>
           <li>SF_PoweredAssaultArmor</li>
           <li>SF_EngineerPowerArmor</li>
@@ -286,6 +288,7 @@
       <li Class="VEF.Weapons.HeavyWeapon">
         <isHeavy>true</isHeavy>
         <supportedArmors>
+          <li>Apparel_PowerArmor</li>
           <li>VWE_Apparel_Exoframe</li>
           <li>SF_PoweredAssaultArmor</li>
           <li>SF_EngineerPowerArmor</li>
@@ -411,6 +414,7 @@
       <li Class="VEF.Weapons.HeavyWeapon">
         <isHeavy>true</isHeavy>
         <supportedArmors>
+          <li>Apparel_PowerArmor</li>
           <li>VWE_Apparel_Exoframe</li>
           <li>SF_PoweredAssaultArmor</li>
           <li>SF_EngineerPowerArmor</li>

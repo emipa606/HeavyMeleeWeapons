@@ -35,27 +35,27 @@
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Blazen_Rock, xrushha, legodude17, amnabi, Kitsunes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2418407014
 with permission
 
 - Added EnableOversizedWeapons as a requirement instead of including it in the mod
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://img.litet.net/logos/Notice.png[/img]
 
 [table]
     [tr]
-        [td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-        [td][url=https://github.com/emipa606/HeavyMeleeWeapons][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+        [td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/HeavyMeleeWeapons][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
-        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/RemoveMayWork.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
 This mod is officially dead. I'm forever grateful to all the people who supported this project. If you'd like to adopt this mod, hit me up on the Rimworld Discord: Blazen_Rock
 [hr][/hr]
 [h1]Big Swords and Exoframes Help Brawlers Keep Mechanoids at Bay.[/h1]
@@ -63,20 +63,20 @@ Have you ever wanted to chop mechanoids to pieces with an oversized sword? Lay w
 
 [h1]Tools of the Trade[/h1]
 Heavy Melee Weapons provides users to make melee combat a bit more engaging via the introduction of powerful weapons and equipment.
-[img]https://imgur.com/RTpSa8u.png[/img]
+[img]https://img.litet.net/RTpSa8u.png[/img]
 
-[img]https://imgur.com/7tDeUyH.png[/img]
+[img]https://img.litet.net/7tDeUyH.png[/img]
 
-[img]https://imgur.com/tZheqgC.png[/img]
+[img]https://img.litet.net/tZheqgC.png[/img]
 
-[img]https://imgur.com/AxgMAFk.png[/img]
+[img]https://img.litet.net/AxgMAFk.png[/img]
 
 Added with the 1.1 update.
-[img]https://imgur.com/DvEZOUW.png[/img]
+[img]https://img.litet.net/DvEZOUW.png[/img]
 
-[img]https://imgur.com/eh5mtdT.png[/img]
+[img]https://img.litet.net/eh5mtdT.png[/img]
 
-[img]https://imgur.com/g9ujuvU.png[/img]
+[img]https://img.litet.net/g9ujuvU.png[/img]
 
 
 [h1] Compatibility[/h1] 
@@ -106,20 +106,20 @@ C# by [url=https://steamcommunity.com/id/legodude17/myworkshopfiles/?appid=29410
 CE Patch by [url=https://steamcommunity.com/profiles/76561198392166105/myworkshopfiles/]Caulaflourer[/url]
 
 
-[url=https://discord.gg/7befJWr9xS][img]https://i.imgur.com/cfoFEMA.png[/img][/url]
+[url=https://discord.gg/7befJWr9xS][img]https://img.litet.net/cfoFEMA.png[/img][/url]
 PackageId:Pitchstone.Heavy Melee Weapons
 	
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115][img]https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  sizeable swords</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2932628115][img]https://img.shields.io/github/v/release/emipa606/HeavyMeleeWeapons?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: sizeable swords</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
 </ModMetaData>
