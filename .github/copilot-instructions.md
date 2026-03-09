@@ -1,30 +1,37 @@
-# Copilot Instructions for RimWorld Heavy Melee Mod Project
+# GitHub Copilot Instructions for RimWorld Mod: Heavy Melee Weapons (Continued)
 
 ## Mod Overview and Purpose
-The Heavy Melee mod is designed to enhance the melee combat experience in RimWorld by adding new weapon systems, combat mechanics, and utilities. The purpose of the mod is to introduce more dynamic and strategic melee fighting options, providing players with tools like enhanced shields and unique weapon abilities. 
+
+The **Heavy Melee Weapons (Continued)** mod is an enhancement of a previously existing mod, officially updated with permission. The mod introduces a variety of powerful melee weapons designed to enhance melee combat in RimWorld. It offers players the ability to wield oversized swords, incendiary cannons, and psychic warhammers to combat enemies, particularly mechanoids. This mod aims to make melee combat more engaging and strategic.
 
 ## Key Features and Systems
-- **Extended Shields**: Provides additional defense mechanics for pawns, including improved feedback through `Gizmo_EnergyShieldExtendedStatus`.
-- **Heavy Melee Weapons**: Adds various melee weapons with distinct abilities, such as the `Verb_Cleave` and `Verb_SelfDamagingMelee`.
-- **Custom Verb Systems**: Implements unique interactions and cooldown systems with custom verbs like `Verb_Cleave` and `Verb_PoweredMelee`.
-- **Explosive and Gravity-based Attacks**: Features like `Comp_GravityLanceExplode` introduce powerful area-of-effect damage dynamics.
+
+- **Oversized Weapons**: The mod requires the "EnableOversizedWeapons" mod, enhancing the game's weaponry available to players.
+- **Unique Weapons**: Introduces new and unique weapon types such as gravity lances, psychic shockwave hammers, and flame-based swords.
+- **Compatibility Patches**: Contains compatibility patches for other popular RimWorld mods, such as "Combat Extended" and "Vanilla Weapons Expanded - Heavy Weapons".
+- **Craftable Persona Variants**: Adds the ability to craft personalized variants of the heavy melee weapons.
 
 ## Coding Patterns and Conventions
-- **Class Structure**: The mod uses a consistent class structure where each weapon or ability is defined by a specific class, typically inheriting from RimWorld's vanilla classes like `ThingComp` or `Verb`.
-- **Method Naming**: Public methods use PascalCase, while private methods are prefixed with an underscore to indicate their visibility.
-- **Interface Implementation**: The mod employs interfaces such as `IVerbTick` and `IVerbCooldown` to define shared behavior among different verb classes.
+
+- **C# Classes**: Organized by weapon and effect. Classes are named with suffixes such as `Command_`, `Comp_`, `DamageWorker_`, and `Verb_` to denote their function.
+- **Methods**: Methods are prefixed with access modifiers like `public` and `private`, and are named with verbs to signify actions (`GetTargetCommand`, `ApplyDamage`, `KeepDisplaying`).
+- **File Organization**: Files are organized by functionality, such as weapons, shields, and damage mechanics, supporting modularity and easier maintenance.
 
 ## XML Integration
-While specific XML data was not provided in the summary, typical integration would involve defining new `ThingDefs`, `HediffDefs`, and other relevant RimWorld XML entries to register the new items and abilities in the game. XML tags should align with the C# class definitions to ensure seamless functionality.
+
+The mod integrates XML for defining weapon properties, balancing characteristics, and setting up compatibility patches. XML files define weapon stats and tags that dictate how these weapons function in the game environment.
 
 ## Harmony Patching
-The mod includes `Harmony_ExosuitHeavyWeapon` class to patch existing RimWorld methods, allowing for modifications without altering the base game code. Harmony patches are applied statically, and appropriate safety checks should be used when patching to avoid conflicts with other mods.
 
+- **Harmony**: The mod uses Harmony for patching methods to ensure compatibility with other mods and to enhance or modify existing game behavior. For example, `Harmony_ExosuitHeavyWeapon` enables pawns with specific equipment to use heavy melee weapons effectively.
+  
 ## Suggestions for Copilot
-1. **Shield Mechanics**: Suggest ways to enhance shield visuals or effects, such as linking shield health to color intensity.
-2. **Dynamic AI Use**: Propose logic for NPCs to optimally use special abilities provided by the mod, based on combat scenarios.
-3. **Improved Feedback Systems**: Recommend adding more detailed feedback to players, such as sound effects or UI highlights when using powerful melee attacks or shields.
-4. **Optimization Tips**: Offer performance optimization tips, particularly for real-time updates during combat (e.g., efficient usage of Tick methods).
-5. **Error Handling and Logging**: Provide guidelines to implement robust error handling and logging for unexpected behaviors in combat interactions.
 
-By following these instructions, Copilot should assist in generating efficient, functional, and scalable code to ensure the Heavy Melee mod provides a seamless and engaging experience for RimWorld players.
+- **Auto-Complete XML**: Suggest XML snippets to define new weapons or modify existing ones, including balance parameters like damage, range, and cooldowns.
+- **Generate Harmony Patches**: Assist in creating Harmony patches for compatibility with other mods, indicating which methods to prefix, postfix, or transpile.
+- **Code Commenting**: Encourage inline comments within C# classes to describe the purpose of complex methods, enhancing code readability and maintainability.
+- **Design Patterns**: Suggest design patterns for implementing new weapon effects or integration with pawn abilities, leveraging existing class and method structures.
+- **Debug Aids**: Propose methods for logging and debugging, such as code snippets for writing mod-specific logs to assist in identifying errors during playtesting.
+- **Testing Assistance**: Recommend unit tests or simulation scenarios to validate the performance and balance of new weapon features introduced by the mod.
+
+This document intends to guide contributors and users in optimizing the development and enhancement of the Heavy Melee Weapons mod with GitHub Copilot's assistance.

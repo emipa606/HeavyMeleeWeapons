@@ -6,4 +6,37 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="HeavyMelee/HeavyMelee.csproj" />
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Misc/Weapons/">
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/MeleeUltratech.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/MeleeUltratechBladelink.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ResearchProjectDefs/">
+    <File Path="../1.6/Defs/ResearchProjectDefs/ResearchProjects_HeavyMeleeWeapons.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/">
+    <File Path="../1.6/Patches/CraftableRoyaltyWeapons.xml" />
+    <File Path="../1.6/Patches/NPCWeapons.xml" />
+    <File Path="../1.6/Patches/PersonaBondForge.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/SoundDefs/">
+    <File Path="../1.6/Defs/SoundDefs/GravityLanceSoundDef.xml" />
+    <File Path="../1.6/Defs/SoundDefs/Interact_Oneshots_Melee.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Misc/">
+    <File Path="../1.6/Defs/ThingDefs_Misc/Apparel_Various.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/GravityLance_Planted.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/">
+    <File Path="../1.6/Defs/Misc.xml" />
+    <File Path="../1.6/Defs/MVCF.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ManeuverDefs/">
+    <File Path="../1.6/Defs/ManeuverDefs/GravityLanceManeuverDefs.xml" />
+    <File Path="../1.6/Defs/ManeuverDefs/GravityLanceToolCapacityDefs.xml" />
+    <File Path="../1.6/Defs/ManeuverDefs/RocketHammerManeuverDefs.xml" />
+    <File Path="../1.6/Defs/ManeuverDefs/RocketHammerToolCapacityDefs.xml" />
+  </Folder>
 </Solution>

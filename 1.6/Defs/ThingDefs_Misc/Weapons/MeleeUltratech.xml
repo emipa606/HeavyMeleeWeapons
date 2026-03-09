@@ -83,6 +83,7 @@
           <li>
             <label>Cleave</label>
             <canBeToggled>true</canBeToggled>
+            <brawlerCaresAbout>false</brawlerCaresAbout>
           </li>
         </verbProps>
       </li>
@@ -274,6 +275,7 @@
           <li>
             <label>Flame Burst</label>
             <canBeToggled>true</canBeToggled>
+            <brawlerCaresAbout>false</brawlerCaresAbout>
             <comps>
               <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
                 <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
@@ -472,6 +474,7 @@
           <li>
             <label>EMP Burst</label>
             <canBeToggled>true</canBeToggled>
+            <brawlerCaresAbout>false</brawlerCaresAbout>
             <comps>
               <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
                 <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
@@ -616,6 +619,7 @@
             <colonistOnly>true</colonistOnly>
             <label>rocket hammer jump</label>
             <canBeToggled>true</canBeToggled>
+            <brawlerCaresAbout>false</brawlerCaresAbout>
             <comps>
               <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
                 <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>

@@ -106,17 +106,46 @@ public static class Harmony_ExosuitHeavyWeapon
             new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon), nameof(ThingDef_IsRangedWeapon))
         );
 
+        harmony.Patch(
+            AccessTools.Method(typeof(ThoughtWorker_IsCarryingRangedWeapon), "CurrentStateInternal"),
+            null,
+            new HarmonyMethod(typeof(Harmony_ExosuitHeavyWeapon),
+                nameof(ThoughtWorker_IsCarryingRangedWeapon_CurrentStateInternal))
+        );
+
         //Harmony_YayoCombat_OversizedWeaponTranspiler.tryPatch_YC_OWT(harmony);
     }
 
+    private static bool IsHeavyWeapon(ThingDef def)
+    {
+        return def != null && SA_HeavyWeaponThingDefs.Contains(def);
+    }
+
+    [HarmonyPriority(Priority.Last)]
     public static void ThingDef_IsRangedWeapon(ThingDef __instance, ref bool __result)
     {
-        if (__result || !SA_HeavyWeaponThingDefs.Contains(__instance))
+        if (!__result)
         {
             return;
         }
 
-        __result = true;
+        if (!SA_HeavyWeaponThingDefs.Contains(__instance))
+        {
+            return;
+        }
+
+        __result = false;
+    }
+
+    [HarmonyPriority(Priority.Last)]
+    public static void ThoughtWorker_IsCarryingRangedWeapon_CurrentStateInternal(Pawn p,
+        ref ThoughtState __result)
+    {
+        var def = p?.equipment?.Primary?.def;
+        if (IsHeavyWeapon(def))
+        {
+            __result = ThoughtState.Inactive;
+        }
     }
 
     public static void DrawWornExtraPost(Apparel_Shield __instance)
